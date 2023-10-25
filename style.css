@@ -51,7 +51,9 @@ li:hover{
       text-decoration: 2px underline red;
     
 }
-
+.bars{
+    display: none;
+}
 .sec2{
 height: 100vh;
 
@@ -204,6 +206,7 @@ background-size: cover;
     background-size: cover;
    background-repeat: no-repeat;
 }
+    
 
 .sec3button{
     display: flex;
@@ -354,4 +357,367 @@ footer{
 
 .logos ul a{
     color: black;
+}
+
+
+/* media queries start here */
+
+/* responsive navbar */
+@media (min-width:320px) and (max-width:769px){
+
+    .nav ul li{
+         display: none;
+    }
+    
+}
+    
+    
+
+
+
+
+/* responsive grid */
+@media  (max-width:576px) and (min-width:320px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,20rem);
+        grid-template-rows: repeat(11,250px);
+        margin: 20px auto;
+        gap: 10px;
+        grid-auto-rows: 150px;
+        
+    
+    }
+    .hello1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+       background-image: url(grid-1.webp);
+       background-size: cover;
+       background-repeat: no-repeat;
+       
+    }
+    .hello2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+       background-image: url(grid-2.webp);
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    background-image: url(grid-3.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    background-image: url(grid-4.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    background-image: url(img-5.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    background-image: url(img-6.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello7{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    background-image: url(img-7.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello8{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    background-image: url(img-8.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello9{
+        grid-column: 1/2;
+        grid-row: 9/10;
+    background-image: url(img-9.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello10{
+        grid-column: 1/2;
+        grid-row: 10/11;
+    background-image: url(img-10.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello11{
+        grid-column: 1/2;
+        grid-row: 11/12;
+        background-image: url(img-11.webp);
+        background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .sec3{
+        width:100vw;
+    }
+    .lastgrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:200px;
+        grid-auto-rows: auto;
+       
+      }
+      .copy{
+        width: 40%;
+        height: 64%;
+      }
+}
+
+/* mobile to tablet */
+@media (min-width:577px) and (max-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,150px);
+        margin: 20px auto;
+        gap: 10px;
+        grid-auto-rows: 150px;
+        
+    
+    }
+    .hello1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+       background-image: url(grid-1.webp);
+       background-size: cover;
+       background-repeat: no-repeat;
+       
+    }
+    .hello2{
+        grid-column: 2/3;
+        grid-row: 1/3;
+       background-image: url(grid-2.webp);
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    background-image: url(grid-3.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello4{
+        grid-column: 2/3;
+        grid-row: 3/5;
+    background-image: url(grid-4.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello5{
+        grid-column: 1/2;
+        grid-row: 3/5;
+    background-image: url(img-5.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello6{
+        grid-column: 2/3;
+        grid-row: 5/7;
+    background-image: url(img-6.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello7{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    background-image: url(img-7.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello8{
+        grid-column: 2/3;
+        grid-row: 7/8;
+    background-image: url(img-8.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello9{
+        grid-column: 1/2;
+        grid-row: 6/8;
+    background-image: url(img-9.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello10{
+        grid-row: 8/10;
+        grid-column:2/3;
+    background-image: url(img-10.webp);
+    background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hello11{
+        grid-column: 1/2;
+        grid-row: 8/9;
+        background-image: url(img-11.webp);
+        background-size: cover;
+       background-repeat: no-repeat;
+    }
+
+    .sec3button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec3button botton{
+        background: transparent;
+    border: 3px solid #b25057;
+    width: 50%;
+    height: 5vh;
+    margin-top: 3%;
+    border-radius: 50px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    }
+    
+    .lastgrid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:150px;
+        grid-auto-rows: auto;
+       
+      }
+
+
+
+
+}
+
+
+
+/* footer */
+
+@media (min-width:320px) and (max-width:576px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8vh;
+        width: 100%;
+    }
+    .company p{
+        font-size: 1.8rem;
+        font-weight: bold;
+        
+        
+       
+    }
+    .company p a{
+        color: black;
+        text-decoration: none;
+    }
+    .company p a:hover{
+        color: red;
+    }
+    
+    .logos {
+        margin-right: 10vw;
+
+    
+    }
+    
+    .logos ul {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        list-style: none;
+        font-size: 1.3rem;
+    }
+    
+    .logos ul a{
+        color: black;
+    }
+
+}
+
+@media (min-width:577px) and (max-width:768px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .copy p{
+        margin-top: 8vh
+        ;
+    }
+    .company p{
+        font-size: 1.8rem;
+        font-weight: bold;
+        
+        
+       
+    }
+    .company p a{
+        color: black;
+        text-decoration: none;
+    }
+    .company p a:hover{
+        color: red;
+    }
+    
+    .logos {
+        margin-right: 10vw;
+
+    
+    }
+    
+    .logos ul {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        list-style: none;
+        font-size: 1.3rem;
+    }
+    
+    .logos ul a{
+        color: black;
+    }
+}
+@media (max-width:375px) and (min-width:220px){
+    .lastgrid{
+        display: grid;
+        grid-template-columns: repeat(2,215px);
+        grid-auto-rows: auto;
+    }
+    .copy{
+        width: 82%;
+        height: 54%;
+    }
+}
+.sec3button button {
+    background: transparent;
+    border: 3px solid #b25057;
+    width: 36%;
+    height: 7vh;
+    margin-top: 3%;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+sec4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107%;
+}
 }
